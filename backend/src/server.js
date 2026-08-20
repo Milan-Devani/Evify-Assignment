@@ -28,14 +28,12 @@ const app = express();
 // 1. Security HTTP Headers
 app.use(helmet());
 
-// 2. CORS Configuration
-const corsOptions = {
-  origin: process.env.CLIENT_URL || '*',
-  credentials: true,
+// 2. CORS Configuration (Allows all web and mobile clients)
+app.use(cors({
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-};
-app.use(cors(corsOptions));
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+}));
 
 // 3. Body Parsers
 app.use(express.json({ limit: '10mb' }));
