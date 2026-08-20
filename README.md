@@ -78,8 +78,9 @@
 Evify provides real-time visibility, telemetry tracking, battery monitoring, and maintenance management for electric vehicle fleets.
 
 ### 🌐 Live API & Demo
-- **Live Backend API**: `https://api.evify-fleet.example.com` *(or `http://localhost:5000` locally)*
-- **Health Check Endpoint**: `https://api.evify-fleet.example.com/health`
+- **Live Backend API**: `http://51.21.127.52:5000/api`
+- **Health Check Endpoint**: `http://51.21.127.52:5000/health`
+- **Vehicles Endpoint**: `http://51.21.127.52:5000/api/vehicles`
 - **Demo Manager Credentials**:
   - **Email**: `admin@evify.com`
   - **Password**: `password123`
