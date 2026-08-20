@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const LIVE_AWS_URL = 'http://51.21.127.52:5000/api';
+
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '/api',
+  baseURL: process.env.REACT_APP_API_URL || LIVE_AWS_URL,
   headers: {
     'Content-Type': 'application/json',
   },

@@ -11,10 +11,10 @@ try {
   // fallback to detected LAN IP
 }
 
-const DEFAULT_BASE_URL = `http://${hostIp}:5000/api`;
+const LIVE_AWS_URL = 'http://51.21.127.52:5000/api';
 
 const api = axios.create({
-  baseURL: process.env.API_BASE_URL || DEFAULT_BASE_URL,
+  baseURL: process.env.API_BASE_URL || LIVE_AWS_URL,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
