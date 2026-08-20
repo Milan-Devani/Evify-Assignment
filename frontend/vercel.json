@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "http://51.21.127.52:5000/api/:match*"
+    },
+    {
+      "source": "/health",
+      "destination": "http://51.21.127.52:5000/health"
+    }
+  ]
+}
