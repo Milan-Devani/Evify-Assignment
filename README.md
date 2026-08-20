@@ -78,7 +78,8 @@
 Evify provides real-time visibility, telemetry tracking, battery monitoring, and maintenance management for electric vehicle fleets.
 
 ### 🌐 Live API & Demo
-- **Live Backend API**: `http://51.21.127.52:5000/api`
+- **🖥️ Live Web Dashboard (Vercel)**: [`https://evify-assignment.vercel.app`](https://evify-assignment.vercel.app)
+- **Live Backend API (AWS EC2)**: `http://51.21.127.52:5000/api`
 - **Health Check Endpoint**: `http://51.21.127.52:5000/health`
 - **Vehicles Endpoint**: `http://51.21.127.52:5000/api/vehicles`
 - **📱 Android APK Direct Download**: [Download Standalone APK](https://expo.dev/accounts/milan-devani/projects/evify-mobile/builds/b871499b-8eb9-43c4-b22d-63a8b1a2b78a)
