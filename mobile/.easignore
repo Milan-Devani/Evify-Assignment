@@ -1,0 +1,3 @@
+# Ignore legacy native directories so EAS Build uses Expo Managed Continuous Native Generation
+android/
+ios/
