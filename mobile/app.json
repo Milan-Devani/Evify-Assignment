@@ -3,7 +3,7 @@
     "name": "Evify Mobile",
     "slug": "evify-mobile",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "portrait",  
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -21,6 +21,10 @@
     "android": {
       "package": "com.evify.mobile",
       "usesCleartextTraffic": true,
+      "networkSecurityConfig": "./networkSecurityConfig.xml",
+      "permissions": [
+        "INTERNET"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#064E3B"
